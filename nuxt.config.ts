@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@vueuse/nuxt'],
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt'],
+  ssr: false,
 
   css: [
     '~/assets/css/main.css'
@@ -23,9 +24,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apartmentsBaseAddress: process.env.NUXT_PUBLIC_APARTMENTS_BASE_ADDRESS || 'https://laraue.com/api/real_estate'
+      apartmentsBaseAddress: process.env.NUXT_PUBLIC_APARTMENTS_BASE_ADDRESS || 'https://apartments.laraue.com/api/real-estate'
     },
   },
-
-  modules: ['@nuxtjs/i18n']
 })
