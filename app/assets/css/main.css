@@ -1,0 +1,33 @@
+:root {
+    --bg: #0f0e0b;
+    --surface: #181713;
+    --card: #1e1c17;
+    --border: #2a2820;
+    --border-hover: #3d3a30;
+    --text: #e8e4da;
+    --text-dim: #8c8679;
+    --text-muted: #5a5649;
+    --accent: #c8a96e;
+    --accent-dim: #a08552;
+    --green: #5a9e6f;
+    --red: #c05a5a;
+    --yellow: #c9a040;
+    --pill-bg: #252218;
+    --pill-active: #c8a96e;
+    --radius: 12px;
+    --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Sora', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+#__nuxt {
+    height: 100dvh;
+}
