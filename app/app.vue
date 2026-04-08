@@ -206,9 +206,8 @@
   })
 
   useSeoMeta({
-    title: computed(() => t('seoTitle')),
-    ogTitle: computed(() => t('seoTitle')),
-    description: computed(() => t('seoDescription')),
+    title: computed(() => 'AI-Ranked SPB Apartments'),
+    description: computed(() => 'The Cian and Avito advertisements aggregator that automatically rank renovations'),
   })
 </script>
 
