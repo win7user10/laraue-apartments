@@ -2,8 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/i18n', '@vueuse/nuxt', 'nuxt-gtag'],
   ssr: false,
+  gtag: {
+    enabled: process.env.NODE_ENV === 'production',
+    id: 'G-RGM3JHLBGL'
+  },
 
   css: [
     '~/assets/css/main.css'
